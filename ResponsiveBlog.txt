@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Blog</title>
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+#ladder-icon {
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 2px;
+
+}
+
+#bg-container {
+    background-color: red;
+}
+
+.Banner-Section-container {
+    background-size: cover;
+    height: 100vh;
+    font-family: "Roboto";
+    color: red;
+	background-color: yellow;
+}
+
+.main-heading {
+    font-size: 100px;
+    font-family: "Times New Roman";
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.description {
+    font-weight: 400;
+    color: red;
+    font-size: 50px;
+    font-family: "Algeria";
+}
+
+.custom-button {
+    color: red;
+    height: 40px;
+    width: 120px;
+    background-color: white;
+    border-width: 2px;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.home-content {
+    background-color: yellow;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    padding: 20px;
+}
+
+.home-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin-top: 30px;
+}
+
+.home-image {
+    width: 500px;
+    height: 250px;
+}
+
+.home-description {
+    font-size: 20px;
+    font-family: "Times New Roman";
+    font-weight: 300;
+    color: red;
+    padding: 20px;
+    margin: 20px;
+}
+
+.about-container {
+    background-color: yellow;
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-heading {
+    color: black;
+    font-family: "Times New Roman";
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 40px;
+    padding-top: 10px;
+}
+
+.about-img {
+    height: 250px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.about-description {
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 300;
+    color: red;
+    margin-top: 10px;
+}
+
+.blog-container {
+    background-color: yellow;
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+}
+
+.blog-heading {
+    color:black;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 40px;
+    padding-top: 10px;
+}
+
+.blog-card-section {
+    background-color: yellow;
+}
+
+.blog-image {
+    height: 150px;
+}
+
+.blog-card-title {
+    font-size: 30px;
+    font-family: "Roboto";
+    color: black;
+    font-weight: bold;
+}
+
+.blog-card-description {
+    font-size: 20px;
+    font-family: "Roboto";
+    color: red;
+}
+
+.blog-link {
+    font-weight: bold;
+    color: black;
+}
+
+.contact-content {
+    background-color: yellow;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-heading {
+    color:black
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 40px;
+    padding-top: 10px;
+}
+
+.contact-mail {
+    font-size: 15px;
+    font-family: "Roboto";
+    color:red;
+}
+
+.contact-links {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: red;
+}
+
+.links {
+    color: black;
+    padding: 0.5rem;
+    padding-bottom: 1.8rem;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .home-card {
+        display: flex;
+        flex-direction: row;
+    }
+}
+	</style>
+    /*<link rel="stylesheet" href="blog.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />*/
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3ef7d8651e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav bgcolor="yellow" class="navbar navbar-expand-lg navbar-light fixed-top" id="bg-container">
+        <div class="container-fluid">
+		<div color="red" size=8>My Blogs</div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" id="ladder-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active m-2 ml-4" style="color:#ffffff; font-weight:600" href="#home">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link m-2  ml-4" style="color:#ffffff; font-weight:600" href="#about">About me</a>
+                    <a class="nav-link m-2  ml-4" style="color:#ffffff; font-weight:600" href="#blog">Blog</a>
+                    <a class="nav-link m-2  ml-4" style="color:#ffffff; font-weight:600" href="#contacts">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="Banner-Section-container d-flex flex-column justify-content-center">
+        <div class="text-center p-5">
+            <h1 class="main-heading mb-5" > TECHNOLOGY</h1>
+            <p class="description mb-5">'Empowering the Future'</p>
+            <button class="custom-button mb-5">SIGN IN</button>
+        </div>
+
+    </div>
+    <section id="home">
+        <div class="home-content" id="home-page">
+            <div class="home-card">
+                <img class="home-image" src="https://www.homecareinsight.co.uk/2020/07/connected-technology.jpg" alt="technology" />
+                <p class="home-description">Technology has become an indispensable part of our lives, permeating every aspect of our society and reshaping the way we live, work, and interact. From the invention of the wheel to the revolutionary breakthroughs of the digital age, technology has been a catalyst for progress and has continuously transformed the world around us. This essay explores the profound impact of technology on various spheres of human existence, highlighting both its benefits and potential challenges.</p>
+            </div>
+            <div class="angle-down-icon">
+                <a href="#about"><i class="fas fa-angle-down"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-container">
+            <h1 class="about-heading">About Me</h1>
+            <p class="about-description">
+               HI! I am Mahvish Ishaq , a 20 year old under graduate student pursuing B.Tech in Computer Science and Engineering from SR University.
+			   I am Currently in 3rd year.I am very much interested in Web Development and also have various skills in this field.
+            </p>
+        </div>
+    </section>
+    <section id="blog">
+        <div class="blog-container pt-3 pb-3">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="blog-heading">Trending Blogs</h1>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="blog-card-section mb-3 shadow">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-trending-blogs-1-img.png" class="blog-image w-100" />
+                        <h1 class="blog-card-title p-2">Amazon</h1>
+                        <p class="blog-card-description p-2">New Way to See the World. It is a simulated experience that can be completely different from the real world.</p>
+                        <a href="" class="blog-link p-2">READ MORE
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="blog-card-section mb-3 shadow">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-trending-blogs-2-img.png" class="blog-image w-100" />
+                        <h1 class="blog-card-title p-2">Advertising</h1>
+                        <p class="blog-card-description p-2">The best one for you. Come experience the wonder of Google Earth in virtual reality.</p>
+                        <a href="" class="blog-link p-2">READ MORE
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="blog-card-section mb-3 shadow">
+                        <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-4.jpg" class="blog-image w-100" />
+                        <h1 class="blog-card-title p-2">FlipKart</h1>
+                        <p class="blog-card-description p-2">Experience the future of innovation with iPhone - where style meets functionality in perfect harmony!</p>
+                        <a href="" class="blog-link p-2">READ MORE
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="blog-card-section mb-3 shadow">
+                        <img src="https://www.highsnobiety.com/static-assets/thumbor/zLC41NNiDYKoaZ5q6kneqQAV_9w=/1600x1067/www.highsnobiety.com/static-assets/wp-content/uploads/2021/10/25113108/apple-airpod-gen-3-review-main.jpg" class="blog-image w-100" />
+                        <h1 class="blog-card-title p-2">Shopsy</h1>
+                        <p class="blog-card-description p-2">Immerse yourself in a symphony of wireless freedom with AirPods - where seamless connectivity and unrivaled sound quality redefine your audio experience.</p>
+                        <a href="" class="blog-link p-2">READ MORE
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacts">
+        <div class="contact-content">
+            <h2 class="contact-heading">Contact Me</h2>
+            <p class="contact-mail">
+               If Any Queries or for Further Information you can Contact me at : +917032125036.  
+											    Mail_ID: ishaqmahvish@1gmail.com
+            </p>
+            <p class="contact-links">Or message me at my social accounts:</p>
+            <div class="links">
+                <a href=""https://www.linkedin.com/in/mahvish-ishaq-18a8a4279"" target="blank"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="https://github.com/mahvish-ishaq" target="blank"><i class="fab fa-github"></i> Github</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html> 
